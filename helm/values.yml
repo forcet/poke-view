@@ -60,9 +60,9 @@ autoscaling:
 
 configMap:
   data: 
-    API_ALL_BASE_URL: http://forcet-poke-api.forcet22-dev.svc.cluster.local:3000/all/pokemon
-    API_INFO_BASE_URL: http://forcet-poke-api.forcet22-dev.svc.cluster.local:3000/info/pokemon
-    API_DATA_BASE_URL: http://forcet-poke-api.forcet22-dev.svc.cluster.local:3000/pokemon/
+    API_ALL_BASE_URL: https://forcet-poke-api-forcet22-dev.apps.rm2.thpm.p1.openshiftapps.com/all/pokemon
+    API_INFO_BASE_URL: https://forcet-poke-api-forcet22-dev.apps.rm2.thpm.p1.openshiftapps.com/info/pokemon
+    API_DATA_BASE_URL: https://forcet-poke-api-forcet22-dev.apps.rm2.thpm.p1.openshiftapps.com/pokemon/
 
 secret:
   enabled: false
