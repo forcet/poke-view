@@ -1,0 +1,91 @@
+name: forcet-poke-frontend
+
+namespace: forcet22-dev
+
+labels:
+  app: forcet-poke-frontend
+
+workload:
+  type: Deployment 
+  replicas: 2
+  storageSize: 20Gi
+
+persistence:
+  enabled: false
+
+replicaCount: 2
+
+service:
+  enabled: true
+  type: ClusterIP    
+  port: 80
+  targetPort: 80
+  headless: true
+  protocol: TCP
+
+container:
+  port: 80
+  failureThreshold: 5
+  initialDelaySeconds: 0
+  periodSeconds: 10
+
+image:
+  repository: {{ repository }}
+  tag: {{ tag }}
+  pullPolicy: IfNotPresent
+
+resources:
+  request:
+    cpu: "500m"
+    memory: "800Mi"
+  limits:
+    cpu: "1000m"
+    memory: "1500Mi"
+
+probes:
+  startup:
+    enabled: false
+
+  readiness:
+    enabled: false
+
+  liveness:
+    enabled: false
+
+autoscaling:
+  enabled: true
+  minReplicas: 2
+  maxReplicas: 5
+  targetCPUUtilizationPercentage: 80
+
+configMap:
+  data: 
+    API_ALL_BASE_URL: http://forcet-poke-api.forcet22-dev.svc.cluster.local:3000/all/pokemon
+    API_INFO_BASE_URL: http://forcet-poke-api.forcet22-dev.svc.cluster.local:3000/info/pokemon
+    API_DATA_BASE_URL: http://forcet-poke-api.forcet22-dev.svc.cluster.local:3000/pokemon/
+
+secret:
+  enabled: false
+  data: {}
+
+networkPolicy:
+  enabled: true
+  port: 80 
+  ingressFromApps: []
+  egressTo: 
+    - app: forcet-poke-api
+      port: 3000
+  allowInternetEgress: true
+  defaultDeny:
+    enabled: false
+  allowDnsEgress: true
+
+route:
+  enabled: true
+  host: ""          
+  serviceName: ""   
+  targetPort: ""
+  tls:
+    enabled: true
+    termination: edge
+    insecureEdgeTerminationPolicy: Redirect

@@ -1,0 +1,298 @@
+:host ::ng-deep .mat-mdc-chip.fire {
+    background-color: #f08030;
+    color: black;
+}
+
+:host ::ng-deep .mat-mdc-standard-chip.fire {
+    background-color: #f08030;
+}
+
+:host ::ng-deep .mat-mdc-standard-chip.fire .mdc-evolution-chip__text-label {
+    color: black;
+}
+
+:host ::ng-deep .mat-mdc-chip.water {
+    background-color: #6890f0;
+    color: black;
+}
+
+:host ::ng-deep .mat-mdc-standard-chip.water {
+    background-color: #6890f0;
+}
+
+:host ::ng-deep .mat-mdc-standard-chip.water .mdc-evolution-chip__text-label {
+    color: black;
+}
+
+:host ::ng-deep .mat-mdc-chip.grass {
+    background-color: #78c850;
+    color: black;
+}
+
+:host ::ng-deep .mat-mdc-standard-chip.grass {
+    background-color: #78c850;
+}
+
+:host ::ng-deep .mat-mdc-standard-chip.grass .mdc-evolution-chip__text-label {
+    color: black;
+}
+
+:host ::ng-deep .mat-mdc-chip.electric {
+    background-color: #f8d030;
+    color: black;
+}
+
+:host ::ng-deep .mat-mdc-standard-chip.electric {
+    background-color: #f8d030;
+}
+
+:host ::ng-deep .mat-mdc-standard-chip.electric .mdc-evolution-chip__text-label {
+    color: black;
+}
+
+:host ::ng-deep .mat-mdc-chip.ice {
+    background-color: #98d8d8;
+    color: black;
+}
+
+:host ::ng-deep .mat-mdc-standard-chip.ice {
+    background-color: #98d8d8;
+}
+
+:host ::ng-deep .mat-mdc-standard-chip.ice .mdc-evolution-chip__text-label {
+    color: black;
+}
+
+:host ::ng-deep .mat-mdc-chip.fighting {
+    background-color: #c03028;
+    color: white;
+}
+
+:host ::ng-deep .mat-mdc-standard-chip.fighting {
+    background-color: #c03028;
+}
+
+:host ::ng-deep .mat-mdc-standard-chip.fighting .mdc-evolution-chip__text-label {
+    color: white;
+}
+
+:host ::ng-deep .mat-mdc-chip.poison {
+    background-color: #a040a0;
+    color: white;
+}
+
+:host ::ng-deep .mat-mdc-standard-chip.poison {
+    background-color: #a040a0;
+}
+
+:host ::ng-deep .mat-mdc-standard-chip.poison .mdc-evolution-chip__text-label {
+    color: white;
+}
+
+:host ::ng-deep .mat-mdc-chip.ground {
+    background-color: #e0c068;
+    color: black;
+}
+
+:host ::ng-deep .mat-mdc-standard-chip.ground {
+    background-color: #e0c068;
+}
+
+:host ::ng-deep .mat-mdc-standard-chip.ground .mdc-evolution-chip__text-label {
+    color: black;
+}
+
+:host ::ng-deep .mat-mdc-chip.flying {
+    background-color: #a890f0;
+    color: black;
+}
+
+:host ::ng-deep .mat-mdc-standard-chip.flying {
+    background-color: #a890f0;
+}
+
+:host ::ng-deep .mat-mdc-standard-chip.flying .mdc-evolution-chip__text-label {
+    color: black;
+}
+
+:host ::ng-deep .mat-mdc-chip.psychic {
+    background-color: #f85888;
+    color: black;
+}
+
+:host ::ng-deep .mat-mdc-standard-chip.psychic {
+    background-color: #f85888;
+}
+
+:host ::ng-deep .mat-mdc-standard-chip.psychic .mdc-evolution-chip__text-label {
+    color: black;
+}
+
+:host ::ng-deep .mat-mdc-chip.bug {
+    background-color: #a8b820;
+    color: black;
+}
+
+:host ::ng-deep .mat-mdc-standard-chip.bug {
+    background-color: #a8b820;
+}
+
+:host ::ng-deep .mat-mdc-standard-chip.bug .mdc-evolution-chip__text-label {
+    color: black;
+}
+
+:host ::ng-deep .mat-mdc-chip.rock {
+    background-color: #b8a038;
+    color: black;
+}
+
+:host ::ng-deep .mat-mdc-standard-chip.rock {
+    background-color: #b8a038;
+}
+
+:host ::ng-deep .mat-mdc-standard-chip.rock .mdc-evolution-chip__text-label {
+    color: black;
+}
+
+:host ::ng-deep .mat-mdc-chip.ghost {
+    background-color: #705898;
+    color: white;
+}
+
+:host ::ng-deep .mat-mdc-standard-chip.ghost {
+    background-color: #705898;
+}
+
+:host ::ng-deep .mat-mdc-standard-chip.ghost .mdc-evolution-chip__text-label {
+    color: white;
+}
+
+:host ::ng-deep .mat-mdc-chip.dragon {
+    background-color: #7038f8;
+    color: white;
+}
+
+:host ::ng-deep .mat-mdc-standard-chip.dragon {
+    background-color: #7038f8;
+}
+
+:host ::ng-deep .mat-mdc-standard-chip.dragon .mdc-evolution-chip__text-label {
+    color: white;
+}
+
+:host ::ng-deep .mat-mdc-chip.dark {
+    background-color: #705848;
+    color: white;
+}
+
+:host ::ng-deep .mat-mdc-standard-chip.dark {
+    background-color: #705848;
+}
+
+:host ::ng-deep .mat-mdc-standard-chip.dark .mdc-evolution-chip__text-label {
+    color: white;
+}
+
+:host ::ng-deep .mat-mdc-chip.steel {
+    background-color: #b8b8d0;
+    color: black;
+}
+
+:host ::ng-deep .mat-mdc-standard-chip.steel {
+    background-color: #b8b8d0;
+}
+
+:host ::ng-deep .mat-mdc-standard-chip.steel .mdc-evolution-chip__text-label {
+    color: black;
+}
+
+:host ::ng-deep .mat-mdc-chip.fairy {
+    background-color: #ee99ac;
+    color: black;
+}
+
+:host ::ng-deep .mat-mdc-standard-chip.fairy {
+    background-color: #ee99ac;
+}
+
+:host ::ng-deep .mat-mdc-standard-chip.fairy .mdc-evolution-chip__text-label {
+    color: black;
+}
+
+:host ::ng-deep .mat-mdc-chip.normal {
+    background-color: #a8a878;
+    color: black;
+}
+
+:host ::ng-deep .mat-mdc-standard-chip.normal {
+    background-color: #a8a878;
+}
+
+:host ::ng-deep .mat-mdc-standard-chip.normal .mdc-evolution-chip__text-label {
+    color: black;
+}
+
+:host ::ng-deep .pokemon-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+.abilityDescription {
+    width: 100%;
+    height: auto;
+}
+
+.separator {
+    height: 15px;
+}
+
+.poke-card {
+    max-width: 900px;
+    margin: 24px auto;
+}
+
+.poke-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 2fr);
+    gap: 24px;
+    align-items: stretch;
+}
+
+@media (max-width: 768px) {
+    .poke-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.poke-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5fbff;
+    border-radius: 16px;
+    min-height: 260px;
+}
+
+.pokemon-image {
+    width: 360px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    cursor: pointer;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.attributes,
+.types,
+.weakness {
+    margin-top: 8px;
+}

@@ -1,0 +1,20 @@
+<h2>Listado de Pokémon</h2>
+<mat-card class="pokemon-card">
+    <div class="pokemon-grid">
+      @if (pokemons$ | async; as pokemons) {
+        @for (p of pokemons; track p.name) {
+          <div class="pokemon-tile">
+            <mat-card-header>
+              <mat-card-title>{{ p.name }}</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+              <a [routerLink]="['/pokemon', p.code]" class="image-link">
+                <img [src]="p.image" [alt]="p.name" />
+              </a>
+            </mat-card-content>
+          </div>
+        }
+      }
+    </div>
+  </mat-card>
+

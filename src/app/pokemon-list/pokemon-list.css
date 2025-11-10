@@ -1,0 +1,50 @@
+:host ::ng-deep mat-grid-tile .mat-grid-tile-content {
+    display: inline-grid;
+}
+
+.image-button {
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    cursor: pointer;
+}
+  
+.image-button:hover img {
+    transform: scale(1.03);
+    transition: transform 0.15s ease;
+}
+
+.image-button:focus-visible {
+    outline: 2px solid #1976d2; 
+    outline-offset: 2px;
+}
+
+.pokemon-card {
+  display: flex;
+  justify-content: center; 
+  padding: 24px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.pokemon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* se adapta al ancho */
+  gap: 16px;
+  width: 100%;
+  max-width: 1200px; /* opcional, para no crecer demasiado */                           
+}
+
+.pokemon-tile {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 12px;
+  transition: transform 0.2s;
+}
+
+.pokemon-tile:hover {
+  transform: translateY(-4px);
+}
