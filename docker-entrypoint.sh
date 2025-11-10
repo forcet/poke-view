@@ -1,3 +1,4 @@
+#!/bin/sh
 set -e
 
 ENV_FILE="/usr/share/nginx/html/public/env.js"
