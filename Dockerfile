@@ -24,10 +24,10 @@ COPY public/env.js /usr/share/nginx/html/assets/env.js
 COPY docker-entrypoint.sh /docker-entrypoint.sh
 RUN chmod +x /docker-entrypoint.sh
 
-# Permisos para que un usuario no-root pueda escribir
-RUN mkdir -p /var/cache/nginx/client_temp /var/run/nginx /var/log/nginx \
-    && chgrp -R 0 /usr/share/nginx/html /var/cache/nginx /var/run/nginx /var/log/nginx \
-    && chmod -R g+rwX /usr/share/nginx/html /var/cache/nginx /var/run/nginx /var/log/nginx
+# Permisos para usuario no-root (UID aleatorio con GID 0)
+RUN mkdir -p /var/cache/nginx/client_temp /var/run/nginx /var/log/nginx /run \
+    && chgrp -R 0 /usr/share/nginx/html /var/cache/nginx /var/run /var/log/nginx /run \
+    && chmod -R g+rwX /usr/share/nginx/html /var/cache/nginx /var/run /var/log/nginx /run
 
 RUN sed -i 's/listen *80;/listen 8080;/g' /etc/nginx/conf.d/default.conf \
     && sed -i 's/listen \[::\]:80;/listen \[::\]:8080;/g' /etc/nginx/conf.d/default.conf
