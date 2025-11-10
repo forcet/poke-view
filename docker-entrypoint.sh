@@ -1,7 +1,14 @@
-#!/bin/sh
+set -e
 
-# Reemplazar variables de entorno en env.js
-envsubst < /usr/share/nginx/html/assets/env.js > /usr/share/nginx/html/assets/env.tmp.js
-mv /usr/share/nginx/html/assets/env.tmp.js /usr/share/nginx/html/assets/env.js
+ENV_FILE="/usr/share/nginx/html/public/env.js"
+
+echo "Reemplazando variables en $ENV_FILE..."
+
+if [ -f "$ENV_FILE" ]; then
+  envsubst < "$ENV_FILE" > "${ENV_FILE}.tmp"
+  mv "${ENV_FILE}.tmp" "$ENV_FILE"
+else
+  echo "⚠️  $ENV_FILE no existe, no se reemplazan variables."
+fi
 
 exec "$@"

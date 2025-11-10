@@ -18,7 +18,7 @@ COPY --from=build /app/dist/pokeView/browser /usr/share/nginx/html
 RUN mkdir -p /usr/share/nginx/html/assets
 
 # Copiar env.js base
-COPY public/env.js /usr/share/nginx/html/assets/env.js
+COPY public/env.js /usr/share/nginx/html/public/env.js
 
 # Copiar entrypoint para hacer el envsubst
 COPY docker-entrypoint.sh /docker-entrypoint.sh
