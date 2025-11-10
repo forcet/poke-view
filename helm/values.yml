@@ -85,7 +85,7 @@ route:
   enabled: true
   host: ""          
   serviceName: ""   
-  targetPort: ""
+  targetPort: "http"
   tls:
     enabled: true
     termination: edge
