@@ -71,6 +71,7 @@ secret:
 networkPolicy:
   enabled: true
   port: 8080
+  allowIngressFromRouter: true 
   ingressFromApps: []
   egressTo: 
     - app: forcet-poke-api
