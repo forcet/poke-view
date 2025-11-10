@@ -24,14 +24,15 @@ COPY public/env.js /usr/share/nginx/html/assets/env.js
 COPY docker-entrypoint.sh /docker-entrypoint.sh
 RUN chmod +x /docker-entrypoint.sh
 
-# Permisos:
-# - Grupo = 0 (root)
-# - Grupo con rwX, otros solo rX
+# Permisos para que un usuario no-root pueda escribir
 RUN mkdir -p /var/cache/nginx/client_temp /var/run/nginx /var/log/nginx \
     && chgrp -R 0 /usr/share/nginx/html /var/cache/nginx /var/run/nginx /var/log/nginx \
     && chmod -R g+rwX /usr/share/nginx/html /var/cache/nginx /var/run/nginx /var/log/nginx
 
-EXPOSE 80
+RUN sed -i 's/listen *80;/listen 8080;/g' /etc/nginx/conf.d/default.conf \
+    && sed -i 's/listen \[::\]:80;/listen \[::\]:8080;/g' /etc/nginx/conf.d/default.conf
+
+EXPOSE 8080
 
 ENTRYPOINT ["/docker-entrypoint.sh"]
 CMD ["nginx", "-g", "daemon off;"]
