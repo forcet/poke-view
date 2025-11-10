@@ -7,13 +7,13 @@ labels:
 
 workload:
   type: Deployment 
-  replicas: 2
+  replicas: 1
   storageSize: 20Gi
 
 persistence:
   enabled: false
 
-replicaCount: 2
+replicaCount: 1
 
 service:
   enabled: true
