@@ -80,7 +80,7 @@ jobs:
     uses: forcet/devop-template/.github/workflows/docker-image-devop-template.yml@main
     with:
       helm_name: helm-template
-      helm_release: forcet-poke-view
+      helm_release: forcet-poke-frontend
       helm_version: 8
       image_repository: ${{ needs.build.outputs.pkg-name }}
       image_tag: ${{ needs.build.outputs.pkg-version }}
